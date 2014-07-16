@@ -1,0 +1,5 @@
+= semantic_form_for @booking do |f|
+  = f.semantic_errors
+
+  = f.input :starts_at, as: :datetime_picker, input_html: { step: 20.minutes }
+  = f.submit
